@@ -1,7 +1,8 @@
 server:
   port: 6969
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/antivirus
-    username: antivirus
-    password: antivirus
+  #datasource:
+    #url: jdbc:postgresql://localhost:5432/antivirus
+    #username: antivirus
+    #password: antivirus
+---

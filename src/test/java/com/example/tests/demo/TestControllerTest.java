@@ -15,9 +15,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @WebAppConfiguration
 class TestControllerTest {
+
     @Autowired
     private TestController controller;
+
     private MockMvc mockMvc;
+
     @Test
     @SneakyThrows
     void getPong() {
@@ -26,4 +29,6 @@ class TestControllerTest {
                .andReturn();
        assertEquals("pong", result.getResponse().getContentAsString());
     }
+
+
 }
